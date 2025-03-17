@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nama Kelompok - Aesthetic</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #797777, #484747, #252525);
+            background-size: 300% 300%;
+            animation: gradientAnimation 5s infinite;
+            font-family: 'Poppins', sans-serif;
+            overflow: hidden;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(209, 208, 208, 0.2);
+            background: rgba(33, 32, 32, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(32, 25, 25, 0.2);
+        }
+
+        h1 {
+            font-size: 3em;
+            font-weight: bold;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin: 0;
+            background: linear-gradient(90deg, #f7f2f1, #757272, #f8dcdc, #939090);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textGradient 4s infinite;
+        }
+
+        @keyframes textGradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            color: #ffffff;
+            letter-spacing: 2px;
+        }
+
+        .members {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .member {
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            color: white;
+            font-size: 1em;
+            font-weight: bold;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .member:hover {
+            transform: scale(1.1);
+            background: rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Kelompok 1</h1>
+        <p>Dasar-Dasar PHP</p>
+        <div class="members">
+            <div class="member">Nabil Akmal</div>
+            <div class="member">Muhammad Byzaqcky Indrawan</div>
+            <div class="member">Rizky Ananta Ginting</div>
+            <div class="member">Rendy Darmawan</div>
+        </div>
+    </div>
+
+</body>
+</html>
